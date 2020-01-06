@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT | GET IN TOUCH </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  <link rel="manifest" href="site.webmanifest">-->
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--  Link to FlexBox-Grid FILE-->
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <!--  link to Font-Awesome icon FILE-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+
+<!--  Here Is The HEADER -->
+<header>
+  <div class="container-fluid">
+    <div class="row center-xs center-sm center-md center-lg middle-sm middle-md middle-lg">
+      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+        <h2>Welcome To our Cleaning Company</h2>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <i class="fa fa-phone"><span> +1 342 422 9029</span></i>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <i class="fa fa-envelope"><span> info@company.com</span></i>
+      </div>
+      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <nav>
+          <div class="containerr">
+            <div class="logo">
+              <a href="index.html"><img src="img/Logo/LOGO.jpg" alt="logo"></a>
+            </div>
+            <div class="navbar">
+              <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">our services</a></li>
+                <li><a href="">our work</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="Contact.html">contact</a></li>
+                <li><a href="">request & quote</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!--the MAP Section-->
+<section id="google-Map">
+  <div class="container-fluid">
+  <h1>Contact US</h1>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of chicago
+      var chicago = {lat: 37.4419, lng: -122.1419};
+      // The map, centered at chicago
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: chicago});
+      // The marker, positioned at chicago
+      var marker = new google.maps.Marker({position: chicago, map: map});
+    }
+  </script>
+  <!--Load the API from the specified URL
+  * The async attribute allows the browser to render the page while the API loads
+  * The key parameter will contain your own API key (which is not needed for this tutorial)
+  * The callback parameter executes the initMap() function
+  -->
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcVDaC8nmIo5qxve-5dws1XRaeN5iwzM&callback=initMap">
+  </script>
+  </div>
+</section>
+
+<!--The Main Core FORM-->
+<section id="main-form">
+  <div class="container-fluid">
+<!--    <div class="container-fluid">-->
+      <div class="row start-xs start-sm start-md start-lg">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h1>General Office</h1>
+          <h2>Contact</h2>
+          <i class="fa fa-map-marker" aria-hidden="true"><strong> Address </strong> </i>
+          <p>3261 Anmoore Road
+            Brooklyn, NY 11230</p>
+          <i class="fa fa-phone" aria-hidden="true"> <strong> Phone 24/7 </strong> </i>
+          <p>800-123-4567, Fax: 718-724-3312</p>
+          <i class="fa fa-clock-o" aria-hidden="true"> <strong>Operating Hours</strong> </i>
+          <p>Mon-Fri: 9:00 am – 5:00 pm <br>
+            Sat-Sun: 11:00 am – 16:00 pm</p>
+          <h2>Look for us on</h2>
+          <i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-twitter-square" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i> <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h1>Get In Touch</h1>
+          <form name="Form1" action="action.php" method="post">
+
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name.." onkeyup='validateName()'>
+              <span class='error-message' id='name-error'></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+              <span class='error-message' id='phone-error'></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email address</label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+              <span class='error-message' id='email-error'></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Enter Your Subject" onkeyup='validateSubject()'>
+            </div>
+
+            <div class="form-group">
+              <label for='contact-Message'>Your Message</label>
+              <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+              <span class='error-message' id='message-error'></span>
+            </div>
+
+            <button onclick='return validateForm()' class="btn btn-default"><span>Submit</span></button>
+            <span class='error-message' id='submit-error'></span>
+          </form>
+        </div>
+      </div>
+<!--    </div>-->
+  </div>
+</section>
+
+<footer id="main-footer">
+  <div class="container-fluid">
+    <div class="row start-xs center-sm center-md center-lg">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-sm start-md start-lg">
+        <h2>Quick Overview</h2>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="">about us</a></li>
+          <li><a href="">our services</a></li>
+          <li><a href="">our work</a></li>
+          <li><a href="">pricing</a></li>
+          <li><a href="">blog</a></li>
+          <li><a href="Contact.html">contact</a></li>
+          <li><a href="">request & quote</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-sm start-md start-lg">
+        <h2>SERVICES</h2>
+        <ul>
+          <li><a href="#main-our-projects">HOUSE CLEANING</a></li>
+          <li><a href="#main-our-projects">COMMERCIAL CLEANING</a></li>
+          <li><a href="#main-our-projects">CARPET CLEANING</a></li>
+          <li><a href="#main-our-projects">WINDOW CLEANING</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-sm start-md start-lg">
+        <h2>Get NewsLetter</h2>
+        <p>Receive updates and latest news direct from our team. Simply enter your email below :</p>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter Your Email Address">
+          <button class="button" style="vertical-align:middle">Subscribe</button>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 start-sm start-md start-lg">
+        <h2>Get In Touch</h2>
+        <i class="fa fa-phone"><span> +1 342 422 9029</span></i>
+        <i class="fa fa-envelope"><span> info@company.com</span></i><br>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+</html>
