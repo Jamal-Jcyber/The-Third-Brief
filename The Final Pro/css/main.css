@@ -83,6 +83,8 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  left: 200px;
 }
 
 .containerr .navbar ul li a {
@@ -132,7 +134,7 @@ html {
 }
 
 .containerr .navbar .icon-bar i {
-  background-color: #fff;
+  background-color: #000;
   height: 2px;
 }
 
@@ -193,6 +195,8 @@ html {
 
   .containerr .navbar ._Menus-show {
     left: 0;
+    z-index: 1;
+
   }
 }
 /*Flip-CARD SETTING*/
@@ -201,7 +205,7 @@ html {
   background-color: transparent;
   width: 500px;
   height: 400px;
-  border: 1px solid #f1f1f1;
+  /*border: 1px solid #f1f1f1;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -230,7 +234,7 @@ html {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  /*background-color: #bbb;*/
   color: black;
 }
 
@@ -265,6 +269,36 @@ html {
 
 }
 
+#s{
+  margin-left: -55px;
+}
+
+#main-image {
+  background-image: url("../img/main/w-main-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3%;
+}
+
+#main-image .row{
+  height: 800px;
+}
+#main-image p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+#main-image h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  
+}
+
+
+@media(max-width: 500px){
+  #ss, #sss, #ssss {
+    width: 421px !important;
+  }
+}
 
 #main-form h1{
   text-align: left;
@@ -569,5 +603,16 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+}
+
+
+/*new update*/
+#main-services .row img {
+  width: 103%;
+}
+
+.flip-card-front img {
+  width: 82%;
+  height: 97%;
 }
 

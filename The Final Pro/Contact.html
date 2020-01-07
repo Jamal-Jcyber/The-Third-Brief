@@ -29,7 +29,7 @@
 
 <!--  Here Is The HEADER -->
 <header>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row center-xs center-sm center-md center-lg middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
         <h2>Welcome To our Cleaning Company</h2>
@@ -85,29 +85,32 @@
   <div class="container-fluid">
   <h1>Contact US</h1>
   <!--The div element for the map -->
-  <div id="map"></div>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of chicago
-      var chicago = {lat: 37.4419, lng: -122.1419};
-      // The map, centered at chicago
-      var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: chicago});
-      // The marker, positioned at chicago
-      var marker = new google.maps.Marker({position: chicago, map: map});
-    }
-  </script>
-  <!--Load the API from the specified URL
-  * The async attribute allows the browser to render the page while the API loads
-  * The key parameter will contain your own API key (which is not needed for this tutorial)
-  * The callback parameter executes the initMap() function
-  -->
-  <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcVDaC8nmIo5qxve-5dws1XRaeN5iwzM&callback=initMap">
-  </script>
+<!--  <div id="map"></div>-->
+<!--  <script>-->
+<!--    // Initialize and add the map-->
+<!--    function initMap() {-->
+<!--      // The location of chicago-->
+<!--      var chicago = {lat: 37.4419, lng: -122.1419};-->
+<!--      // The map, centered at chicago-->
+<!--      var map = new google.maps.Map(-->
+<!--        document.getElementById('map'), {zoom: 4, center: chicago});-->
+<!--      // The marker, positioned at chicago-->
+<!--      var marker = new google.maps.Marker({position: chicago, map: map});-->
+<!--    }-->
+<!--  </script>-->
+<!--  &lt;!&ndash;Load the API from the specified URL-->
+<!--  * The async attribute allows the browser to render the page while the API loads-->
+<!--  * The key parameter will contain your own API key (which is not needed for this tutorial)-->
+<!--  * The callback parameter executes the initMap() function-->
+<!--  &ndash;&gt;-->
+<!--  <script async defer-->
+<!--          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcVDaC8nmIo5qxve-5dws1XRaeN5iwzM&callback=initMap">-->
+<!--  </script>-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190256.1002286583!2d-87.87238919449157!3d41.83364743345524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20Illinois%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sma!4v1578323319968!5m2!1sfr!2sma"
+            width="100%" height="800px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
 </section>
+
 
 <!--The Main Core FORM-->
 <section id="main-form">
@@ -161,7 +164,7 @@
               <span class='error-message' id='message-error'></span>
             </div>
 
-            <button onclick='return validateForm()' class="btn btn-default"><span>Submit</span></button>
+            <button onclick='return validateForm()' class="btn btn-default" name="submit"><span>Submit</span></button>
             <span class='error-message' id='submit-error'></span>
           </form>
         </div>
