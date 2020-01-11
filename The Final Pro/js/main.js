@@ -138,3 +138,17 @@ function producePrompt(message, promptLocation, color) {
 
 
 }
+
+
+
+// function getInputs(){
+//   // Selecting the input element and get its value
+//   let completeName = document.getElementById("name").value;
+//   let phoneNumber = document.getElementById("phone").value;
+//   let addressMail = document.getElementById("email").value;
+//   let subj = document.getElementById("subject").value;
+//   let messag = document.getElementById("message");
+//
+//   // Displaying the value
+//   alert("Comlete Name is:" +completeName);
+// }
