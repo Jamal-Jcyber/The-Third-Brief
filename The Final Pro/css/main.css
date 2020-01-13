@@ -760,3 +760,48 @@ textarea {
   height: 97%;
 }
 
+
+
+
+
+
+
+
+
+
+/*Css Ismail*/
+
+    /*No border Butt Works*/
+     .BTN{
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+    } 
+
+     .BTN:hover {background: #eee;}
+    .all {color: rgb(34, 146, 103);} 
+
+    /*image border*/
+     .Workicon {border-radius: 50%;}
+    .Workicon{
+      border: 5px ;border:1px solid black;
+    } 
+
+     .button {
+      background-color: #38ADA9;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 12px;
+    } 
