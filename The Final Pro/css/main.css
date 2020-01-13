@@ -28,7 +28,7 @@ html {
 
 .containerr {
   height: 80px;
-  background-color: #fafafa;
+  background-color: #38ADA9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ html {
 
 .containerr .navbar ul li a {
   text-decoration: none;
-  color: #7C7C7C;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   display: block;
@@ -375,12 +375,12 @@ html {
 
 #main-footer{
   background-color: #fafafa;
-  /*background-image: url("../img/footer/footer.jpg");*/
+  background-image: url("../img/footer/footer.jpg");
   margin-top: 10%;
 }
 
 #main-form{
-  background-image: url("../img/form/form-image.jpg");
+  background-image: url("../img/form/form-image2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -498,8 +498,6 @@ header a{
   border-radius: 27.5px;
   padding: 20px 20px;
 }
-
-
 
 
 

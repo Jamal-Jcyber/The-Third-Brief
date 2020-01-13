@@ -141,14 +141,26 @@ function producePrompt(message, promptLocation, color) {
 
 
 
-// function getInputs(){
-//   // Selecting the input element and get its value
-//   let completeName = document.getElementById("name").value;
-//   let phoneNumber = document.getElementById("phone").value;
-//   let addressMail = document.getElementById("email").value;
-//   let subj = document.getElementById("subject").value;
-//   let messag = document.getElementById("message");
-//
-//   // Displaying the value
-//   alert("Comlete Name is:" +completeName);
-// }
+function getInputs(){
+  // // Selecting the input element and get its value
+  // let completeName = document.getElementById("name").value;
+  // let phoneNumber = document.getElementById("phone").value;
+  // let addressMail = document.getElementById("email").value;
+  // let subj = document.getElementById("subject").value;
+  // let messag = document.getElementById("message");
+  //
+  // // Displaying the value
+  // alert(completeName+ "\n" +phoneNumber+ "\n" +addressMail+ "\n" +subj+ "\n" +messag);
+
+  let formInputs = document.getElementsByTagName("input");
+  let alertContent ="";
+  Array.prototype.forEach.call(formInputs, function (element) {
+    alertContent += element.value + "\n";
+  });
+  alert(alertContent);
+}
+
+
+function showSubscribe() {
+    alert("Subscription has been activated successfully, please check your inbox !!!!");
+}

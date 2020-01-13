@@ -195,30 +195,30 @@ label{
   padding: 20px;
   width: 350px;
   transition: all 0.5s;
-  cursor: pointer;
+  /*cursor: pointer;*/
   margin: 5px;
 }
 #main-testimonial .button span {
-  cursor: pointer;
+  /*cursor: pointer;*/
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-#main-testimonial .button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-#main-testimonial .button:hover span {
-  padding-right: 25px;
-}
-#main-testimonial .button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+/*#main-testimonial .button span:after {*/
+/*  content: '\00bb';*/
+/*  position: absolute;*/
+/*  opacity: 0;*/
+/*  top: 0;*/
+/*  right: -20px;*/
+/*  transition: 0.5s;*/
+/*}*/
+/*#main-testimonial .button:hover span {*/
+/*  padding-right: 25px;*/
+/*}*/
+/*#main-testimonial .button:hover span:after {*/
+/*  opacity: 1;*/
+/*  right: 0;*/
+/*}*/
 /*====================================================================================================================*/
 /*====================================================================================================================*/
 #main-form .container-fluid .btn{

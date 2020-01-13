@@ -17,20 +17,20 @@
     //DECLARING &  display the results
 
     $completeName = $_POST['name'];
-    echo 'Full name is :' .$completeName. "<br/>";
+    echo 'FULL NAME :' .$completeName. "<br/><br>";
     $phone = $_POST['phone'];
-    echo 'Phone number is :' .$phone. "<br/>";
+    echo 'PHONE NUMBER :' .$phone. "<br/><br>";
     $mail = $_POST['email'];
-    echo 'Your address email is :' .$mail. "<br/>";
+    echo 'EMAIL :' .$mail. "<br/><br>";
     $subjects = $_POST['subject'];
-    echo 'The subject ?' .$subjects. "<br/>";
+    echo 'SUBJECT ?' .$subjects. "<br/><br>";
     $message = $_POST['message'];
-    echo 'THE FULL MESSAGE IS HERE :' .$message. "<br/>";
+    echo 'MESSAGE :' .$message. "<br/><br>";
 }
 
 
 ?>
-<button><a href="index.html">GO BACK HOME</a></button>
+<button><a href="index.html">HOME</a></button>
 </body>
 </html>
 
