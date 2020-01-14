@@ -328,8 +328,44 @@ label{
   opacity: 1;
   right: 0;
 }
+/*====================================================================================================================*/
+#blog .button {
+  display: inline-block;
+  border-radius: 35px;
+  background-color: #38ADA9;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#blog .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#blog .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#blog .button:hover span {
+  padding-right: 25px;
+}
+#blog .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
-
+/*====================================================================================================================*/
 #sp{
   position: relative;
   top: 46px;
@@ -374,6 +410,81 @@ label{
   padding-top: 20%;
 
 }
+
+
+#blog{
+  margin-top: 50px;
+}
+/*======================================================================================*/
+
+@media (max-width: 500px) {
+  .ismail{
+    padding-left: 30px !important;
+  }
+  .img{
+    padding-bottom: 30px !important;
+  }
+  video{
+    width: 450px !important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  #main-why .why p{
+    padding-left: 10px !important;
+    padding-right: 10px;
+  }
+}
+
+#main-form .container-fluid{
+  padding-bottom: 20px;
+}
+
+
+@media (max-width: 500px){
+  #our-project img{
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .top-header{
+    padding-bottom: 10px;
+  }
+  .top-header i{
+    padding-bottom: 10px;
+  }
+  .top-header .start-xs{
+    padding-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

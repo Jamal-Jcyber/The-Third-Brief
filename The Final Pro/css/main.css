@@ -781,8 +781,8 @@ textarea {
       display: inline-block;
     } 
 
-     .BTN:hover {background: #eee;}
-    .all {color: rgb(34, 146, 103);} 
+    /* .BTN:hover {background: #eee;}*/
+    /*.all {color: rgb(34, 146, 103);} */
 
     /*image border*/
      .Workicon {border-radius: 50%;}

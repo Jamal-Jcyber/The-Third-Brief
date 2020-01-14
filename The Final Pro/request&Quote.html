@@ -14,12 +14,13 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="css/normalize.css">
+<!--  <link rel="stylesheet" href="css/normalizebyGitSalah.css">-->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mainbyGitSalah.css">
   <!--  Link to FlexBox-Grid FILE-->
-  <link rel="stylesheet" href="css/flexboxgrid.css">
+<!--  <link rel="stylesheet" href="css/flexboxgridbyGitSalah.css">-->
   <!--  link to Font-Awesome icon FILE-->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+<!--  <link rel="stylesheet" href="css/font-awesomebyGitSalah.min.css">-->
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -30,7 +31,7 @@
 <!-- Add your site or application content here -->
 <!--  Here Is The HEADER -->
 <header>
-  <div class="container">
+  <div class="container" >
     <div class="row center-xs center-sm center-md center-lg middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
         <h2>Welcome To our Cleaning Company</h2>
@@ -86,29 +87,29 @@
 
 
 <section id="core">
-  <div class="container">
+  <div class="container" id="hello-div">
     <div class="row start-xs start-sm start-md start-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>book your cleaning</h1>
+        <h1 class="h">book your cleaning</h1>
         <hr>
       </div>
     </div>
 
 
     <div class="row start-sm start-md start-lg">
-      <h1>Contact informations</h1>
+      <h1 id="h">Contact informations</h1>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti impedit nam, nihil non possimus sed tempore? Animi debitis dolorum et facilis non, quae tempora voluptates? Aliquam assumenda eius expedita repellat.</p>
+        <p id="hello-p">This information will be used to contact you about your service.</p>
 
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="hi-input">
         <input type="text" placeholder="your Name"><br>
         <input type="text" placeholder="phone number">
 
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="hi-input1">
         <input type="text" placeholder="your Name"><br>
         <input type="text" placeholder="phone number">
       </div>
@@ -118,46 +119,51 @@
 
 
     <div class="row start-sm start-md start-lg">
-      <h1>Home informations</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti impedit nam, nihil non possimus sed tempore? Animi debitis dolorum et facilis non, quae tempora voluptates? Aliquam assumenda eius expedita repellat.</p>
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <input type="text" placeholder="your Name">
+      <h1 id="h">Home informations</h1>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p id="hello-p">Tell us about your home.</p>
+            </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="hey-input">
+        <input type="text" placeholder="2 Bedrooms" id="bed">
 
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <input type="text" placeholder="your Name">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="hey-input">
+        <input type="text" placeholder="1 Bathrooms" id="bath">
       </div>
 
     </div>
     <hr>
 
     <div class="row start-sm start-md start-lg">
-      <h1>SERVICES</h1>
+      <h1 id="h">SERVICES</h1>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <select>
-          <option value="">maroc</option>
+        <select id="selected">
+          <option value="" disabled="" selected="">- Please Select -</option>
+                    <option value="Apartment Cleaning">Apartment Cleaning</option>
+                    <option value="House Cleaning">House Cleaning</option>
+                    <option value="Сarpet Сleaning">Сarpet Сleaning</option>
         </select>
       </div>
     </div>
     <hr>
 
     <div class="row start-sm start-md start-lg">
-      <h1>SERVICES</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti impedit nam, nihil non possimus sed tempore? Animi debitis dolorum et facilis non, quae tempora voluptates? Aliquam assumenda eius expedita repellat.</p>
-
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <input type="datetime-local">
+      <h1 id="h">SERVICES</h1>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p id="hello-p">When would you like us to come?</p>
+            </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="hey-input">
+        <input type="datetime-local" id="date">
 
       </div>
 
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <input type="datetime-local">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="hey-input">
+        <input type="datetime-local" id="date">
       </div>
 
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <input type="datetime-local">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="hey-input">
+        <input type="datetime-local" id="date">
       </div>
 
     </div>
@@ -166,10 +172,10 @@
 
     <div class="row center-xs center-sm center-md center-lg">
       <div class="col">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facere sed unde voluptatem. Aliquam asperiores blanditiis dicta et eum inventore ipsa, ipsum, nesciunt omnis possimus, quos sapiente voluptatibus. Dicta, perferendis?</p>
-        <button>BOOK NOW</button>
-      </div>
-    </div>
+        <p>We will confirm your service request within 24 hours. Thank you very much!</p>
+			<button class="btn-quote" name="submit">
+				<span>Book Now</span>
+			</button>     
 
   </div>
 </section>
@@ -292,6 +298,8 @@
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
   ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
 </script>
+<script src="https://use.fontawesome.com/ef6f30b6bd.js"></script>
+
 <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>
