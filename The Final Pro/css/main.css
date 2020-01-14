@@ -805,3 +805,11 @@ textarea {
       cursor: pointer;
       border-radius: 12px;
     } 
+
+    
+
+@media(max-width: 500px){
+	.ismail img {
+		width: 456px;
+	}
+}
